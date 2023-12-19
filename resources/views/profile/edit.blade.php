@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Edit Profile</h5>
+                    <h5 class="title">Mengubah Profil</h5>
                 </div>
                 <form method="post" action="{{ route('profile.update') }}" autocomplete="off">
                     <div class="card-body">
@@ -34,7 +34,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Password</h5>
+                    <h5 class="title">Kata Sandi</h5>
                 </div>
                 <form method="post" action="{{ route('profile.password') }}" autocomplete="off">
                     <div class="card-body">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-fill btn-primary">Change Password</button>
+                        <button type="submit" class="btn btn-fill btn-primary">Perubahan Kata Sandi</button>
                     </div>
                 </form>
             </div>

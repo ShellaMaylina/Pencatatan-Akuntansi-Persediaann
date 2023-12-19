@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Sale Summary</h4>
+                            <h4 class="card-title">Ringkasan Penjualan</h4>
                         </div>
                         @if (!$sale->finalized_at)
                             <div class="col-4 text-right">
@@ -18,12 +18,12 @@
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-sm btn-primary">
-                                            Delete Sale
+                                            Hapus Penjualan
                                         </button>
                                     </form>
                                 @else
                                     <button type="button" class="btn btn-sm btn-primary" onclick="confirm('ATTENTION: The transactions of this sale do not seem to coincide with the cost of the products, do you want to finalize it? Your records cannot be modified from now on.') ? window.location.replace('{{ route('sales.finalize', $sale) }}') : ''">
-                                        Finalize Sale
+                                        Penjualan Diselesaikan
                                     </button>
                                 @endif
                             </div>
@@ -34,13 +34,13 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
-                            <th>User</th>
-                            <th>Client</th>
-                            <th>products</th>
-                            <th>Total Stock</th>
-                            <th>Total Cost</th>
-                            <th>Status</th>
+                            <th>Tanggal</th>
+                            <th>Pengguna</th>
+                            <th>Klien</th>
+                            <th>Produk</th>
+                            <th>Total Persediaan</th>
+                            <th>Total Biaya</th>
+                            <th>Keadaan</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -79,10 +79,10 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Category</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Price C/U</th>
+                            <th>Kategori</th>
+                            <th>Produk</th>
+                            <th>Kuantitas</th>
+                            <th>Harga C/U</th>
                             <th>Total</th>
                             <th></th>
                         </thead>

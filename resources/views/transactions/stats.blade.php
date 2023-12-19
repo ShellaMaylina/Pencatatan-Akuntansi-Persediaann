@@ -7,11 +7,11 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Transaction Statistics</h4>
+                            <h4 class="card-title">Statistika Transaksi</h4>
                         </div>
                         <div class="col-4 text-right">
                             <a href="{{ route('transactions.index') }}" class="btn btn-sm btn-primary">
-                                View Transactions
+                                Melihat Transaksi
                             </a>
                         </div>
                     </div>
@@ -19,13 +19,13 @@
                 <div class="card-body">
                         <table class="table">
                             <thead>
-                                <th>Period</th>
-                                <th>Transactions</th>
-                                <th>Income</th>
-                                <th>Expenses</th>
-                                <th>Payments</th>
-                                <th>Cash Balance</th>
-                                <th>Total balance</th>
+                                <th>Periode</th>
+                                <th>Transaksi</th>
+                                <th>Pendapatan</th>
+                                <th>Beban</th>
+                                <th>Pembayaran</th>
+                                <th>Rata-rata Tunai</th>
+                                <th>Rata-rata Total</th>
                                 <th></th>
                             </thead>
                             <tbody>
@@ -54,10 +54,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Pending Balances</h4>
+                            <h4 class="card-title">Rata-rata Tertunda</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('clients.index') }}" class="btn btn-sm btn-primary">View Clients</a>
+                            <a href="{{ route('clients.index') }}" class="btn btn-sm btn-primary">Melihat Klien</a>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@
                     <div class="table-full-width table-responsive">
                         <table class="table">
                             <thead>
-                                <th>Client</th>
-                                <th>Purchases</th>
-                                <th>Transactions</th>
-                                <th>Balance</th>
+                                <th>Klien</th>
+                                <th>Pembelian</th>
+                                <th>Transaksi</th>
+                                <th>Rata-rata</th>
                                 <th></th>
                             </thead>
                             <tbody>
@@ -108,10 +108,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Statistics by Methods</h4>
+                            <h4 class="card-title">Statistika berdasarkan Metode</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('methods.index') }}" class="btn btn-sm btn-primary">View Methods</a>
+                            <a href="{{ route('methods.index') }}" class="btn btn-sm btn-primary">Melihat Metode</a>
                         </div>
                     </div>
                 </div>
@@ -119,9 +119,9 @@
                     <div class="table-full-width table-responsive">
                         <table class="table">
                             <thead>
-                                <th>Method</th>
-                                <th>Transactions {{ $date->year }}</th>
-                                <th>Balance {{ $date->year }}</th>
+                                <th>Metode</th>
+                                <th>Transaksi {{ $date->year }}</th>
+                                <th>Rata-rata {{ $date->year }}</th>
                                 <th></th>
                             </thead>
                             <tbody>
@@ -151,10 +151,10 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">Sales Statistics</h4>
+                        <h4 class="card-title">Statistika Penjualan</h4>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="{{ route('sales.index') }}" class="btn btn-sm btn-primary">View Sales</a>
+                        <a href="{{ route('sales.index') }}" class="btn btn-sm btn-primary">Melihat Penjualan</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                         <th>Sales</th>
                         <th>Clients</th>
                         <th>Total Stock</th>
-                        <th data-toggle="tooltip" data-placement="bottom" title="Promedio de ingresos por cada venta">Average C / V</th>
+                        <th data-toggle="tooltip" data-placement="bottom" title="Promedio de ingresos por cada venta">Rata-rata C / V</th>
                         <th>Billed Amount</th>
                         <th>To Finalize</th>
                     </thead>

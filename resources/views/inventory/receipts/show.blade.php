@@ -10,7 +10,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Receipt Summary</h4>
+                            <h4 class="card-title">Ringkasan Tanda Terima</h4>
                         </div>
                         @if (!$receipt->finalized_at)
                             <div class="col-4 text-right">
@@ -19,12 +19,12 @@
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-sm btn-primary">
-                                            Delete Receipt
+                                            Hapus Tanda Terima
                                         </button>
                                     </form>
                                 @else
                                     <button type="button" class="btn btn-sm btn-primary" onclick="confirm('ATTENTION: At the end of this receipt you will not be able to load more products in it.') ? window.location.replace('{{ route('receipts.finalize', $receipt) }}') : ''">
-                                        Finalize Receipt
+                                        Tanda Terima Diselesaikan
                                     </button>
                                 @endif
                             </div>
@@ -35,14 +35,14 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
-                            <th>Title</th>
-                            <th>User</th>
-                            <th>Provider</th>
-                            <th>products</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Status</th>
+                            <th>Tanggal</th>
+                            <th>Judul</th>
+                            <th>Pengguna</th>
+                            <th>Penyedia</th>
+                            <th>Produk</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Keadaan</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -60,7 +60,7 @@
                                 <td>{{ $receipt->products->count() }}</td>
                                 <td>{{ $receipt->products->sum('stock') }}</td>
                                 <td>{{ $receipt->products->sum('stock_defective') }}</td>
-                                <td>{!! $receipt->finalized_at ? 'Finalized' : '<span style="color:red; font-weight:bold;">TO FINALIZE</span>' !!}</td>
+                                <td>{!! $receipt->finalized_at ? 'Finalized' : '<span style="color:red; font-weight:bold;">UNTUK DISELESAIKAN</span>' !!}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -87,11 +87,11 @@
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Category</th>
-                            <th>Product</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Total Stock</th>
+                            <th>Kategori</th>
+                            <th>Produk</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Total Persediaan</th>
                             <th></th>
                         </thead>
                         <tbody>

@@ -8,10 +8,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Sales</h4>
+                            <h4 class="card-title">Penjualan</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('sales.create') }}" class="btn btn-sm btn-primary">Register Sale</a>
+                            <a href="{{ route('sales.create') }}" class="btn btn-sm btn-primary">Daftar Penjualan</a>
                         </div>
                     </div>
                 </div>
@@ -19,13 +19,13 @@
                     <div class="">
                         <table class="table">
                             <thead>
-                                <th>Date</th>
-                                <th>Client</th>
-                                <th>User</th>
-                                <th>Products</th>
-                                <th>Total Stock</th>
-                                <th>Total Amount</th>
-                                <th>Status</th>
+                                <th>Tanggal</th>
+                                <th>Klien</th>
+                                <th>Pengguna</th>
+                                <th>Produk</th>
+                                <th>Total Persediaan</th>
+                                <th>Jumlah Total</th>
+                                <th>Keadaan</th>
                                 <th></th>
                             </thead>
                             <tbody>
@@ -39,9 +39,9 @@
                                         <td>{{ format_money($sale->transactions->sum('amount')) }}</td>
                                         <td>
                                             @if (!$sale->finalized_at)
-                                                <span class="text-danger">To Finalize</span>
+                                                <span class="text-danger">Untuk Diselesaikan</span>
                                             @else
-                                                <span class="text-success">Finalized</span>
+                                                <span class="text-success">Diselesaikan</span>
                                             @endif
                                         </td>
                                         <td class="td-actions text-right">

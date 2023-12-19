@@ -1,4 +1,4 @@
-@extends('layouts.app', ['pageSlug' => 'dashboard', 'page' => 'Dashboard', 'section' => ''])
+@extends('layouts.app', ['pageSlug' => 'dashboard', 'page' => 'Halaman Utama', 'section' => ''])
 
 @section('content')
     <div class="row">
@@ -7,28 +7,28 @@
                 <div class="card-header ">
                     <div class="row">
                         <div class="col-sm-6 text-left">
-                            <h5 class="card-category">Total sales</h5>
-                            <h2 class="card-title">Annual yield</h2>
+                            <h5 class="card-category">Total Penjualan</h5>
+                            <h2 class="card-title">Presentase Tahunan</h2>
                         </div>
                         <div class="col-sm-6">
                             <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                            <label class="btn btn-sm btn-primary btn-simple active" id="0">
+                            <label class="btn btn-sm btn-danger btn-danger active" id="0">
                                 <input type="radio" name="options" checked>
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Products</span>
+                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Produk</span>
                                 <span class="d-block d-sm-none">
                                     <i class="tim-icons icon-single-02"></i>
                                 </span>
                             </label>
-                            <label class="btn btn-sm btn-primary btn-simple" id="1">
+                            <label class="btn btn-sm btn-danger btn-danger" id="1">
                                 <input type="radio" class="d-none d-sm-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Purchases</span>
+                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Pembelian</span>
                                 <span class="d-block d-sm-none">
                                     <i class="tim-icons icon-gift-2"></i>
                                 </span>
                             </label>
-                            <label class="btn btn-sm btn-primary btn-simple" id="2">
+                            <label class="btn btn-sm btn-danger btn-danger" id="2">
                                 <input type="radio" class="d-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clients</span>
+                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Pelanggan</span>
                                 <span class="d-block d-sm-none">
                                     <i class="tim-icons icon-tap-02"></i>
                                 </span>
@@ -50,12 +50,12 @@
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
-                    <h5 class="card-category">Last Month Income</h5>
-                    <h3 class="card-title"><i class="tim-icons icon-money-coins text-primary"></i>{{ format_money($semesterincomes) }}</h3>
+                    <h5 class="card-category">Pendapatan Akhir Bulan</h5>
+                    <h3 class="card-title"><i class="tim-icons icon-money-coins text-danger"></i>{{ format_money($semesterincomes) }}</h3>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
-                        <canvas id="chartLinePurple"></canvas>
+                        <canvas id="chartLinePink"></canvas>
                     </div>
                 </div>
             </div>
@@ -63,8 +63,8 @@
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
-                    <h5 class="card-category">Monthly Balance</h5>
-                    <h3 class="card-title"><i class="tim-icons icon-bank text-info"></i> {{ format_money($monthlybalance) }}</h3>
+                    <h5 class="card-category">Saldo Rata-rata Bulanan</h5>
+                    <h3 class="card-title"><i class="tim-icons icon-bank text-danger"></i> {{ format_money($monthlybalance) }}</h3>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
@@ -76,8 +76,8 @@
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
-                    <h5 class="card-category">Expenditures Last Month</h5>
-                    <h3 class="card-title"><i class="tim-icons icon-paper text-success"></i> {{ format_money($semesterexpenses) }}</h3>
+                    <h5 class="card-category">Pengeluaran Bulan Lalu</h5>
+                    <h3 class="card-title"><i class="tim-icons icon-paper text-danger"></i> {{ format_money($semesterexpenses) }}</h3>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
@@ -94,10 +94,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Pending Sales</h4>
+                            <h4 class="card-title">Pemjualan Tertunda</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('sales.create') }}" class="btn btn-sm btn-primary">New Sale</a>
+                            <a href="{{ route('sales.create') }}" class="btn btn-sm btn-danger">Penjualan Baru</a>
                         </div>
                     </div>
                 </div>
@@ -107,16 +107,16 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Date
+                                        Tanggal
                                     </th>
                                     <th>
-                                        Client
+                                        Pelanggan
                                     </th>
                                     <th>
-                                        Products
+                                        Produk
                                     </th>
                                     <th>
-                                        Paid out
+                                        Terbayar
                                     </th>
                                     <th>
                                         Total
@@ -135,7 +135,7 @@
                                         <td>{{ format_money($sale->transactions->sum('amount')) }}</td>
                                         <td>{{ format_money($sale->products->sum('total_amount')) }}</td>
                                         <td class="td-actions text-right">
-                                            <a href="{{ route('sales.show', ['sale' => $sale]) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="View Sale">
+                                            <a href="{{ route('sales.show', ['sale' => $sale]) }}" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="View Sale">
                                                 <i class="tim-icons icon-zoom-split"></i>
                                             </a>
                                         </td>
@@ -152,11 +152,11 @@
                 <div class="card-header">
                 <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Latest Transactions</h4>
+                            <h4 class="card-title">Transaksi Terakhir</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#transactionModal">
-                                New Transaction
+                            <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#transactionModal">
+                                Transaksi Baru
                             </button>
                         </div>
                     </div>
@@ -167,13 +167,13 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Category
+                                        Kategori
                                     </th>
                                     <th>
-                                        Title
+                                        Judul
                                     </th>
                                     <th>
-                                        Medium
+                                        Sarana
                                     </th>
                                     <th>
                                         Total
@@ -206,7 +206,7 @@
                                         <td>{{ format_money($transaction->amount) }}</td>
                                         <td class="td-actions text-right">
                                             @if ($transaction->sale_id)
-                                                <a href="{{ route('sales.show', $transaction->sale_id) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="More details">
+                                                <a href="{{ route('sales.show', $transaction->sale_id) }}" class="btn btn-danger" data-danger="tooltip" data-danger="bottom" title="More details">
                                                     <i class="tim-icons icon-zoom-split"></i>
                                                 </a>
                                             @endif
@@ -225,18 +225,18 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New Transaction</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Transaksi Baru</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-between">
-                        <a href="{{ route('transactions.create', ['type' => 'payment']) }}" class="btn btn-sm btn-primary">Payment</a>
-                        <a href="{{ route('transactions.create', ['type' => 'income']) }}" class="btn btn-sm btn-primary">Income</a>
-                        <a href="{{ route('transactions.create', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Expense</a>
-                        <a href="{{ route('sales.create') }}" class="btn btn-sm btn-primary">Sale</a>
-                        <a href="{{ route('transfer.create') }}" class="btn btn-sm btn-primary">Transfer</a>
+                        <a href="{{ route('transactions.create', ['type' => 'payment']) }}" class="btn btn-sm btn-danger">Payment</a>
+                        <a href="{{ route('transactions.create', ['type' => 'income']) }}" class="btn btn-sm btn-danger">Income</a>
+                        <a href="{{ route('transactions.create', ['type' => 'expense']) }}" class="btn btn-sm btn-danger">Expense</a>
+                        <a href="{{ route('sales.create') }}" class="btn btn-sm btn-danger">Penjualan</a>
+                        <a href="{{ route('transfer.create') }}" class="btn btn-sm btn-danger">Pemindahan</a>
                     </div>
                 </div>
             </div>

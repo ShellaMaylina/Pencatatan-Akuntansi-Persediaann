@@ -6,20 +6,20 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Client Information</h4>
+                    <h4 class="card-title">Informasi Klien</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Document</th>
-                            <th>Telephone</th>
+                            <th>Nama</th>
+                            <th>Dokumen</th>
+                            <th>Telefon</th>
                             <th>Email</th>
-                            <th>Balance</th>
-                            <th>Purchases</th>
-                            <th>Total Payment</th>
-                            <th>Last purchase</th>
+                            <th>Rata-rata</th>
+                            <th>Pembelian</th>
+                            <th>Total Pembayaran</th>
+                            <th>Pembelian Terakhir</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -54,10 +54,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Latest Transactions</h4>
+                            <h4 class="card-title">Transaksi Terakhir</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('clients.transactions.add', $client) }}" class="btn btn-sm btn-primary">New Transaction</a>
+                            <a href="{{ route('clients.transactions.add', $client) }}" class="btn btn-sm btn-primary">Transaksi Baru</a>
                         </div>
                     </div>
                 </div>
@@ -65,9 +65,9 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
-                            <th>Method</th>
-                            <th>Amount</th>
+                            <th>Tanggal</th>
+                            <th>Metode</th>
+                            <th>Jumlah</th>
                         </thead>
                         <tbody>
                             @foreach ($client->transactions->reverse()->take(25) as $transaction)
@@ -89,14 +89,14 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Latest Purchases</h4>
+                            <h4 class="card-title">Pembelian Terakhir</h4>
                         </div>
                         <div class="col-4 text-right">
                             <form method="post" action="{{ route('sales.store') }}">
                                 @csrf
                                 <input type="hidden" name="user_id" value="{{ Auth::id() }}">
                                 <input type="hidden" name="client_id" value="{{ $client->id }}">
-                                <button type="submit" class="btn btn-sm btn-primary">New Purchase</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Pembelian Baru</button>
                             </form>
                         </div>
                     </div>
@@ -105,11 +105,11 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
-                            <th>products</th>
-                            <th>Stock</th>
-                            <th>Total Amount</th>
-                            <th>State</th>
+                            <th>Tanggal</th>
+                            <th>Produk</th>
+                            <th>Persediaan</th>
+                            <th>Jumlah Total</th>
+                            <th>Negara</th>
                             <th></th>
                         </thead>
                         <tbody>

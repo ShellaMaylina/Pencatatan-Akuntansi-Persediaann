@@ -5,19 +5,19 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Provider Information</h4>
+                    <h4 class="card-title">Informasi Penyaji</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
+                            <th>Nama</th>
+                            <th>Deskripsi</th>
                             <th>Email</th>
-                            <th>Telephone</th>
-                            <th>Payment information</th>
-                            <th>Payments Made</th>
-                            <th>Total Payment</th>
+                            <th>Telefon</th>
+                            <th>Informasi Pembayaran</th>
+                            <th>Pembayaran Dibuat</th>
+                            <th>Total Pembayaran</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -40,17 +40,17 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Latest Payments</h4>
+                    <h4 class="card-title">Pembayaran Terakhir</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
+                            <th>Tanggal</th>
                             <th>ID</th>
-                            <th>Title</th>
-                            <th>Method</th>
-                            <th>Amount</th>
-                            <th>Reference</th>
+                            <th>Judul</th>
+                            <th>Metode</th>
+                            <th>Jumlah</th>
+                            <th>Referensi</th>
                         </thead>
                         <tbody>
                             @foreach ($transactions as $transaction)
@@ -73,18 +73,18 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Latest Receipts</h4>
+                    <h4 class="card-title">Tanda Terima Terakhir</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
+                            <th>Tanggal</th>
                             <th>ID</th>
-                            <th>Title</th>
-                            <th>products</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Total Stock</th>
+                            <th>Judul</th>
+                            <th>Produk</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Total Persediaan</th>
                             <th></th>
                         </thead>
                         <tbody>

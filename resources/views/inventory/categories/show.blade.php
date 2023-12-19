@@ -5,17 +5,17 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Category Information</h4>
+                    <h4 class="card-title">Informasi Kategori</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>products</th>
-                            <th>Stocks</th>
-                            <th>Stocks Faulty</th>
-                            <th>Average Price</th>
+                            <th>Nama</th>
+                            <th>Produk</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Gagal</th>
+                            <th>Rata-rata Harga</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -42,13 +42,13 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Base price</th>
-                            <th>Average Price</th>
-                            <th>Total sales</th>
-                            <th>Income Produced</th>
+                            <th>Nama</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Harga Dasar</th>
+                            <th>Harga Rata-rata</th>
+                            <th>Total Penjualan</th>
+                            <th>Pendapatan Produksi</th>
                             <th></th>
                         </thead>
                         <tbody>

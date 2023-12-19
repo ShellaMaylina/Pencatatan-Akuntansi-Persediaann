@@ -7,10 +7,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Providers</h4>
+                            <h4 class="card-title">Penyaji</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('providers.create') }}" class="btn btn-sm btn-primary">New Provider</a>
+                            <a href="{{ route('providers.create') }}" class="btn btn-sm btn-primary">Penyaji Baru</a>
                         </div>
                     </div>
                 </div>
@@ -20,12 +20,12 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th scope="col">Name</th>
-                                <th scope="col">Description</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Deskripsi</th>
                                 <th scope="col">Email</th>
-                                <th scope="col">Telephone</th>
-                                <th scope="col">Payments Made</th>
-                                <th scope="col">Total Payment</th>
+                                <th scope="col">Telefon</th>
+                                <th scope="col">Pembayaran Dibuat</th>
+                                <th scope="col">Total Pembauaran</th>
                                 <th scope="col"></th>
                             </thead>
                             <tbody>

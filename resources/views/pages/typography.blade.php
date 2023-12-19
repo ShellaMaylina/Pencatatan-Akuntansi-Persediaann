@@ -5,45 +5,45 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header mb-5">
-          <h5 class="card-category">White Table Heading</h5>
-          <h3 class="card-title">Created using Poppins Font Family</h3>
+          <h5 class="card-category">Judul Tabel Putih</h5>
+          <h3 class="card-title">Dibuat menggunakan Keluarga Font Poppins</h3>
         </div>
         <div class="card-body">
           <div class="typography-line">
             <h1>
-              <span>Header 1</span>The Life of White Dashboard </h1>
+              <span>Header 1</span>Kehidupan Dasbor Putih </h1>
           </div>
           <div class="typography-line">
             <h2>
-              <span>Header 2</span>The Life of White Dashboard </h2>
+              <span>Header 2</span>Kehidupan Dasbor Putih </h2>
           </div>
           <div class="typography-line">
             <h3>
-              <span>Header 3</span>The Life of White Dashboard </h3>
+              <span>Header 3</span>Kehidupan Dasbor Putih </h3>
           </div>
           <div class="typography-line">
             <h4>
-              <span>Header 4</span>The Life of White Dashboard </h4>
+              <span>Header 4</span>Kehidupan Dasbor Putih </h4>
           </div>
           <div class="typography-line">
             <h5>
-              <span>Header 5</span>The Life of White Dashboard </h5>
+              <span>Header 5</span>Kehidupan Dasbor Putih </h5>
           </div>
           <div class="typography-line">
             <h6>
-              <span>Header 6</span>The Life of White Dashboard </h6>
+              <span>Header 6</span>Kehidupan Dasbor Putih </h6>
           </div>
           <div class="typography-line">
             <p>
               <span>Paragraph</span>
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya. Saya memahami budaya. Saya adalah inti. Saya pikir itu adalah tanggung jawab yang saya miliki, untuk mendorong kemungkinan-kemungkinan, untuk menunjukkan kepada orang-orang, ini adalah level yang bisa dicapai.
             </p>
           </div>
           <div class="typography-line">
             <span>Quote</span>
             <blockquote>
               <p class="blockquote blockquote-primary">
-                "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
+                "Saya akan menjadi pemimpin sebuah perusahaan yang pada akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya. Saya memahami budaya. Saya adalah intinya. Saya pikir itu adalah tanggung jawab yang saya miliki, untuk mendorong berbagai kemungkinan, untuk menunjukkan kepada orang-orang, ini adalah level yang mungkin terjadi."
                 <br>
                 <br>
                 <small>
@@ -55,34 +55,34 @@
           <div class="typography-line">
             <span>Muted Text</span>
             <p class="text-muted">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya...
             </p>
           </div>
           <div class="typography-line">
             <span>Primary Text</span>
             <p class="text-primary">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...</p>
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya...</p>
           </div>
           <div class="typography-line">
             <span>Info Text</span>
             <p class="text-info">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya... </p>
           </div>
           <div class="typography-line">
             <span>Success Text</span>
             <p class="text-success">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya... </p>
           </div>
           <div class="typography-line">
             <span>Warning Text</span>
             <p class="text-warning">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya...
             </p>
           </div>
           <div class="typography-line">
             <span>Danger Text</span>
             <p class="text-danger">
-              I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+              Saya akan menjadi pemimpin sebuah perusahaan yang akhirnya bernilai miliaran dolar, karena saya mendapatkan jawabannya... </p>
           </div>
           <div class="typography-line">
             <h2>
@@ -93,54 +93,54 @@
             </h2>
           </div>
           <div class="typography-line">
-            <span>Lists</span>
+            <span>Daftar</span>
             <div class="row">
               <div class="col-md-3">
-                <h5>Unordered List</h5>
+                <h5>Daftar Tidak Dipesan</h5>
                 <ul>
-                  <li>List Item</li>
-                  <li>List Item</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
                   <li class="list-unstyled">
                     <ul>
-                      <li>List Item</li>
-                      <li>List Item</li>
-                      <li>List Item</li>
+                      <li>Daftar Barang</li>
+                      <li>Daftar Barang</li>
+                      <li>Daftar Barang</li>
                     </ul>
                   </li>
-                  <li>List Item</li>
+                  <li>Daftar Barang</li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h5>Ordered List</h5>
+                <h5>Daftar Tidak Dipesan</h5>
                 <ol>
-                  <li>List Item</li>
-                  <li>List Item</li>
-                  <li>List item</li>
-                  <li>List Item</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
                 </ol>
               </div>
               <div class="col-md-3">
-                <h5>Unstyled List</h5>
+                <h5>Daftar Tanpa Jenis</h5>
                 <ul class="list-unstyled">
-                  <li>List Item</li>
-                  <li>List Item</li>
-                  <li>List item</li>
-                  <li>List Item</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
+                  <li>Daftar Barang</li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h5>Inline List</h5>
+                <h5>Daftar Sesuai</h5>
                 <ul class="list-inline">
-                  <li class="list-inline-item">List1</li>
-                  <li class="list-inline-item">List2</li>
-                  <li class="list-inline-item">List3</li>
+                  <li class="list-inline-item">Daftar1</li>
+                  <li class="list-inline-item">Daftar2</li>
+                  <li class="list-inline-item">Daftar3</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="typography-line">
-            <span>Code</span>
-            <p>This is
+            <span>Kode</span>
+            <p>Ini adalah
               <code>.css-class-as-code</code>, an example of an inline code element. Wrap inline code within a
               <code> &lt;code&gt;...&lt;/code&gt;</code>tag.
             </p>

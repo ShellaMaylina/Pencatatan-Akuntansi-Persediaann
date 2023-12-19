@@ -5,20 +5,20 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Method information</h4>
+                    <h4 class="card-title">Informasi Metode</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Transactions</th>
-                            <th>Daily Balance</th>
-                            <th>Weekly Balance</th>
-                            <th>Quarterly Balance</th>
-                            <th>Monthly Balance</th>
-                            <th>Annual balance</th>
+                            <th>Nama</th>
+                            <th>Deskripsi</th>
+                            <th>Transaksi</th>
+                            <th>Rata-rata Harian</th>
+                            <th>Rata-rata Mingguan</th>
+                            <th>Rata-rata Triwulan</th>
+                            <th>Rata-rata Bulanan</th>
+                            <th>Rata-rata Tahunan</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -48,11 +48,11 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
-                            <th>Type</th>
-                            <th>Title</th>
-                            <th>Amount</th>
-                            <th>Reference</th>
+                            <th>Tanggal</th>
+                            <th>Jenis</th>
+                            <th>Judul</th>
+                            <th>Jumlah</th>
+                            <th>Referensi</th>
                         </thead>
                         <tbody>
                             @foreach($transactions as $transaction)

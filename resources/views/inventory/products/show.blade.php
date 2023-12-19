@@ -5,20 +5,20 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Product Information</h4>
+                    <h4 class="card-title">Informasi Produk</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Category</th>
-                            <th>Name</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Base price</th>
-                            <th>Average Price</th>
-                            <th>Total sales</th>
-                            <th>Income Produced</th>
+                            <th>Kategori</th>
+                            <th>Nama</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Harga Dasar</th>
+                            <th>Harga Rata-rata</th>
+                            <th>Total Penjualan</th>
+                            <th>Pendapatan Produksi</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -43,16 +43,16 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Latest Sales</h4>
+                    <h4 class="card-title">Penjualan Terakhir</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
-                            <th>Sale ID</th>
-                            <th>Quantity</th>
-                            <th>Price Unit</th>
-                            <th>Total Amount</th>
+                            <th>Tanggal</th>
+                            <th>ID Penjualan</th>
+                            <th>Kuantitas</th>
+                            <th>Harga Satuan</th>
+                            <th>Jumlah Total</th>
                             <th></th>
                         </thead>
                         <tbody>
@@ -81,17 +81,17 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Latest Receipts</h4>
+                    <h4 class="card-title">Tanda Terima Terakhir</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
-                            <th>Receipt ID</th>
-                            <th>Title</th>
-                            <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Total Stock</th>
+                            <th>Tanggal</th>
+                            <th>ID Tanggal Terima</th>
+                            <th>Judul</th>
+                            <th>Persediaan</th>
+                            <th>Persediaan Rusak</th>
+                            <th>Total Persediaan</th>
                             <th></th>
                         </thead>
                         <tbody>

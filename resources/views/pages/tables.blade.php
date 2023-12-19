@@ -7,8 +7,8 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header card-header-primary">
-            <h4 class="card-title ">Simple Table</h4>
-            <p class="card-category"> Here is a subtitle for this table</p>
+            <h4 class="card-title "> Tabel Sederhana</h4>
+            <p class="card-category"> Berikut adalah subjudul untuk tabel ini</p>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -18,16 +18,16 @@
                     ID
                   </th>
                   <th>
-                    Name
+                    Nama
                   </th>
                   <th>
-                    Country
+                    Negara
                   </th>
                   <th>
-                    City
+                    Kota
                   </th>
                   <th>
-                    Salary
+                    Gaji
                   </th>
                 </thead>
                 <tbody>
@@ -39,13 +39,13 @@
                       Dakota Rice
                     </td>
                     <td>
-                      Niger
+                      Nigeria
                     </td>
                     <td>
                       Oud-Turnhout
                     </td>
                     <td class="text-primary">
-                      $36,738
+                      Rp 36.738.000
                     </td>
                   </tr>
                   <tr>
@@ -62,7 +62,7 @@
                       Sinaai-Waas
                     </td>
                     <td class="text-primary">
-                      $23,789
+                      Rp 23.789.000
                     </td>
                   </tr>
                   <tr>
@@ -73,13 +73,13 @@
                       Sage Rodriguez
                     </td>
                     <td>
-                      Netherlands
+                      Netherland
                     </td>
                     <td>
                       Baileux
                     </td>
                     <td class="text-primary">
-                      $56,142
+                      Rp 56.142.000
                     </td>
                   </tr>
                   <tr>
@@ -90,13 +90,13 @@
                       Philip Chaney
                     </td>
                     <td>
-                      Korea, South
+                      Korea Selatan
                     </td>
                     <td>
                       Overland Park
                     </td>
                     <td class="text-primary">
-                      $38,735
+                      Rp 38.735.000
                     </td>
                   </tr>
                   <tr>
@@ -110,10 +110,10 @@
                       Malawi
                     </td>
                     <td>
-                      Feldkirchen in Kärnten
+                      Feldkirchen di Kärnten
                     </td>
                     <td class="text-primary">
-                      $63,542
+                      Rp 63.542.000
                     </td>
                   </tr>
                   <tr>
@@ -124,13 +124,13 @@
                       Mason Porter
                     </td>
                     <td>
-                      Chile
+                      Chili
                     </td>
                     <td>
                       Gloucester
                     </td>
                     <td class="text-primary">
-                      $78,615
+                      Rp 78.615.000
                     </td>
                   </tr>
                 </tbody>
@@ -142,8 +142,8 @@
       <div class="col-md-12">
         <div class="card card-plain">
           <div class="card-header card-header-primary">
-            <h4 class="card-title mt-0"> Table on Plain Background</h4>
-            <p class="card-category"> Here is a subtitle for this table</p>
+            <h4 class="card-title mt-0"> Tabel di Latar Belakang Polos</h4>
+            <p class="card-category"> Berikut adalah subjudul untuk tabel ini</p>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -153,16 +153,16 @@
                     ID
                   </th>
                   <th>
-                    Name
+                    Nama
                   </th>
                   <th>
-                    Country
+                    Negara
                   </th>
                   <th>
-                    City
+                    Kota
                   </th>
                   <th>
-                    Salary
+                    Gaji
                   </th>
                 </thead>
                 <tbody>
@@ -174,13 +174,13 @@
                       Dakota Rice
                     </td>
                     <td>
-                      Niger
+                      Nigeria
                     </td>
                     <td>
                       Oud-Turnhout
                     </td>
                     <td>
-                      $36,738
+                      Rp 36.738.000
                     </td>
                   </tr>
                   <tr>
@@ -197,7 +197,7 @@
                       Sinaai-Waas
                     </td>
                     <td>
-                      $23,789
+                      Rp 23.789.000
                     </td>
                   </tr>
                   <tr>
@@ -208,13 +208,13 @@
                       Sage Rodriguez
                     </td>
                     <td>
-                      Netherlands
+                      Netherland
                     </td>
                     <td>
                       Baileux
                     </td>
                     <td>
-                      $56,142
+                      Rp 56.142.000
                     </td>
                   </tr>
                   <tr>
@@ -225,13 +225,13 @@
                       Philip Chaney
                     </td>
                     <td>
-                      Korea, South
+                      Korea Selatan
                     </td>
                     <td>
                       Overland Park
                     </td>
                     <td>
-                      $38,735
+                      Rp 38.735.000
                     </td>
                   </tr>
                   <tr>
@@ -245,10 +245,10 @@
                       Malawi
                     </td>
                     <td>
-                      Feldkirchen in Kärnten
+                      Feldkirchen di Kärnten
                     </td>
                     <td>
-                      $63,542
+                      Rp 63.542.000
                     </td>
                   </tr>
                   <tr>
@@ -265,7 +265,7 @@
                       Gloucester
                     </td>
                     <td>
-                      $78,615
+                      Rp 78.615.000
                     </td>
                   </tr>
                 </tbody>

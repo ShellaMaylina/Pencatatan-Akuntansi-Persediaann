@@ -7,11 +7,11 @@
                 <div class="card-header">
                 <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Transactions</h4>
+                            <h4 class="card-title">Transaksi</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#transactionModal">
-                                New Transaction
+                            <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#transactionModal">
+                                Transaksi Baru
                             </button>
                         </div>
                     </div>
@@ -21,16 +21,16 @@
 
                     <div class="">
                         <table class="table tablesorter " id="">
-                            <thead class=" text-primary">
-                                <th>Date</th>
-                                <th>Type</th>
-                                <th>Title</th>
-                                <th>Method</th>
-                                <th>Amount</th>
-                                <th>Reference</th>
-                                <th>Client</th>
-                                <th>Provider</th>
-                                <th>Transfer</th>
+                            <thead class=" text-danger">
+                                <th>Tanggal</th>
+                                <th>Jenis</th>
+                                <th>Judul</th>
+                                <th>Metode</th>
+                                <th>Jumlah</th>
+                                <th>Referensi</th>
+                                <th>Klien</th>
+                                <th>Penyaji</th>
+                                <th>Pemindahan</th>
                                 <th></th>
                             </thead>
                             <tbody>
@@ -105,18 +105,18 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New Transaction</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Transaksi Baru</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-between">
-                        <a href="{{ route('transactions.create', ['type' => 'payment']) }}" class="btn btn-sm btn-primary">Payment</a>
-                        <a href="{{ route('transactions.create', ['type' => 'income']) }}" class="btn btn-sm btn-primary">Income</a>
-                        <a href="{{ route('transactions.create', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Expense</a>
-                        <a href="{{ route('sales.create') }}" class="btn btn-sm btn-primary">Sale</a>
-                        <a href="{{ route('transfer.create') }}" class="btn btn-sm btn-primary">Transfer</a>
+                        <a href="{{ route('transactions.create', ['type' => 'payment']) }}" class="btn btn-sm btn-danger">Payment</a>
+                        <a href="{{ route('transactions.create', ['type' => 'income']) }}" class="btn btn-sm btn-danger">Income</a>
+                        <a href="{{ route('transactions.create', ['type' => 'expense']) }}" class="btn btn-sm btn-danger">Expense</a>
+                        <a href="{{ route('sales.create') }}" class="btn btn-sm btn-danger">Penjualan</a>
+                        <a href="{{ route('transfer.create') }}" class="btn btn-sm btn-danger">Pemindahan</a>
                     </div>
                 </div>
             </div>

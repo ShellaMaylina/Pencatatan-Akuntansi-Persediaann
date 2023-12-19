@@ -7,10 +7,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Categories</h4>
+                            <h4 class="card-title">Kategori</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('categories.create') }}" class="btn btn-sm btn-primary">New Category</a>
+                            <a href="{{ route('categories.create') }}" class="btn btn-sm btn-primary">Kategori Baru</a>
                         </div>
                     </div>
                 </div>
@@ -20,11 +20,11 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th scope="col">Name</th>
-                                <th scope="col">products</th>
-                                <th scope="col">Total Stock</th>
-                                <th scope="col">Defective Stock</th>
-                                <th scope="col">Average Price of Product</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Produk</th>
+                                <th scope="col">Total Persediaan</th>
+                                <th scope="col">Persediaan Rusak</th>
+                                <th scope="col">Harga Rata-rata Produk</th>
                                 <th scope="col"></th>
                             </thead>
                             <tbody>
